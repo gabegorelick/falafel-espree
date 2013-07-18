@@ -63,7 +63,7 @@ function isKeyword (id) {
 
 var output = falafel(src, { isKeyword: isKeyword }, function (node) {
     if (node.type === 'UnaryExpression'
-    && node.operator === 'beep') {
+    && node.keyword === 'beep') {
         node.update(
             'String(' + node.argument.source() + ').toUpperCase()'
         );
@@ -121,6 +121,9 @@ falafel uses a custom patch of esprima with support for an `opts.isKeyword()`
 function. When `opts.isKeyword(id)` returns `true`, the string `id` will be
 treated as a keyword. You can use this behavior to create custom unary
 expression keywords.
+
+An `opts.isKeyword(id)` value that is a string will be mapped to existing types.
+The only currently supported string value is `"block"`.
 
 # nodes
 
