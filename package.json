@@ -20,7 +20,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "node --harmony test/bin/run.js test/*.js"
   },
   "devDependencies": {
     "tape": "~1.0.4"
