@@ -22,8 +22,11 @@
   "scripts": {
     "test": "node --harmony test/bin/run.js test/*.js"
   },
+  "dependencies": {
+    "espree": "^2.0.3"
+  },
   "devDependencies": {
-    "tape": "~1.0.4"
+    "tape": "^4.0.0"
   },
   "engines": {
     "node": ">=0.4.0"
@@ -57,8 +60,5 @@
         "12.0"
       ]
     }
-  },
-  "dependencies": {
-    "espree": "^2.0.3"
   }
 }
