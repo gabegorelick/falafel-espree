@@ -1,10 +1,10 @@
 {
-  "name": "falafel",
-  "description": "transform the ast on a recursive walk",
-  "version": "0.3.1",
+  "name": "falafel-espree",
+  "description": "transform the ast on a recursive walk using espree",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/node-falafel.git"
+    "url": "git://github.com/gabegorelick/falafel-espree.git"
   },
   "main": "index.js",
   "keywords": [
@@ -13,7 +13,9 @@
     "traversal",
     "syntax",
     "tree",
-    "burrito"
+    "burrito",
+    "falafel",
+    "espree"
   ],
   "directories": {
     "example": "example",
@@ -33,9 +35,8 @@
   },
   "license": "MIT",
   "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
+    "name": "Gabe Gorelick",
+    "email": "gabegorelick@gmail.com"
   },
   "testling": {
     "files": "test/*.js",
